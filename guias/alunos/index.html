@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeroClass AI + Inglês Curso Idiomas - A Revolução do Ensino Híbrido</title>
+  <meta name="description" content="Conheça o ambiente completo de estudo: Emma AI (tutora 24/7), apostilas com áudio, videoaulas reais, pronúncia, ditado, quiz e muito mais. Material estruturado desde 2002.">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      /* Paleta Azul Profunda e Cores Institucionais */
+      --blue-950: #0f172a;
+      --blue-900: #1e3a8a;
+      --blue-800: #1e40af;
+      --blue-600: #2563eb;
+      --blue-500: #3b82f6;
+      --green-700: #059669;
+      --green-600: #10b981;
+      --green-500: #22c55e;
+      --yellow-500: #fbbf24;
+      --gray-900: #111827;
+      --gray-800: #1f2937;
+      --gray-700: #374151;
+      --gray-600: #4b5563;
+      --gray-500: #6b7280;
+      --gray-200: #e5e7eb;
+      --gray-100: #f3f4f6;
+      --gray-50: #f9fafb;
+      --white: #ffffff;
+      --red-500: #ef4444;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--gray-800);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+    
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.95); /* Darker background */
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+    
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    
+    .header-logos {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    
+    .header-logo {
+      height: 38px;
+      width: auto;
+    }
+    
+    .header-divider {
+      width: 1px;
+      height: 30px;
+      background: rgba(255,255,255,0.2);
+    }
+    
+    .header-nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s;
+      border: 2px solid transparent;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    
+    .btn-ghost {
+      color: white;
+      border-color: rgba(255,255,255,0.2);
+    }
+    
+    .btn-ghost:hover {
+      background: rgba(255,255,255,0.1);
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, var(--green-700), var(--green-600));
+      color: white;
+      box-shadow: 0 10px 30px rgba(16,185,129,0.3);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(16,185,129,0.4);
+    }
+    
+    /* Hero */
+    .hero {
+      /* Gradiente Azul Profundo - Sem Roxo */
+      background: linear-gradient(135deg, var(--blue-950) 0%, var(--blue-900) 40%, var(--blue-800) 100%);
+      color: white;
+      padding: 100px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05), transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05), transparent 50%);
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .hero-logo {
+      max-width: 280px;
+      margin: 0 auto 30px;
+      filter: drop-shadow(0 10px 40px rgba(0,0,0,0.3));
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 25px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    
+    .hero-subtitle {
+      font-size: 1.35rem;
+      opacity: 0.95;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+    
+    .hero-badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 35px 0;
+    }
+    
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      backdrop-filter: blur(10px);
+    }
+    
+    /* Container & Section */
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    section {
+      padding: 90px 24px;
+    }
+    
+    .section-alt {
+      background: var(--gray-50);
+    }
+    
+    /* Section AI - Substituindo Roxo por Azul Escuro Tecnológico */
+    .section-ai {
+      background: linear-gradient(160deg, #020617 0%, #1e3a8a 100%);
+      color: white;
+      position: relative;
+    }
+    
+    .section-dark {
+      background: var(--gray-900);
+      color: white;
+    }
+    
+    .section-title {
+      font-size: 2.8rem;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+      color: var(--blue-900);
+    }
+    
+    .section-title.white {
+      color: white;
+    }
+    
+    .section-subtitle {
+      font-size: 1.25rem;
+      text-align: center;
+      color: var(--gray-600);
+      max-width: 900px;
+      margin: 0 auto 60px;
+      line-height: 1.6;
+    }
+    
+    .section-subtitle.white {
+      color: rgba(255,255,255,0.9);
+    }
+    
+    /* IMAGEM RESTRITA - REGRA DOS 80% */
+    /* Mantém a imagem controlada, centralizada e estética */
+    .img-constrained {
+      width: 100%;
+      max-width: 80%; /* Regra fundamental */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 16px;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    /* Para telas muito largas, reduzimos para 70% para manter elegância */
+    @media (min-width: 1400px) {
+      .img-constrained {
+        max-width: 70%;
+      }
+    }
+    
+    /* Grid System */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      align-items: center;
+      max-width: 1300px;
+      margin: 60px auto;
+    }
+    
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 50px;
+    }
+    
+    /* Cards & Blocks */
+    .feature-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      border: 1px solid var(--gray-200);
+      transition: all 0.3s ease;
+      height: 100%; /* Garante altura simétrica no grid */
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      border-color: var(--blue-500);
+    }
+    
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      display: block;
+    }
+    
+    .feature-card h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--blue-900);
+    }
+    
+    .feature-card p {
+      color: var(--gray-600);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+    
+    .content-block {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      border: 1px solid var(--gray-200);
+      height: 100%; /* Garante altura simétrica */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .content-block h3 {
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: var(--blue-900);
+    }
+    
+    .content-block p {
+      color: var(--gray-600);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    
+    .content-block ul {
+      list-style: none;
+      margin: 20px 0;
+    }
+    
+    .content-block li {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 14px;
+      color: var(--gray-700);
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    
+    .check {
+      color: var(--green-600);
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+    
+    /* Tabela de Comparação (Restaurada) */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 60px 0;
+      border-radius: 16px;
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      min-width: 900px;
+    }
+    
+    thead {
+      background: linear-gradient(135deg, var(--blue-900), var(--blue-800));
+      color: white;
+    }
+    
+    th {
+      padding: 24px 16px;
+      text-align: left;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+    
+    td {
+      padding: 20px 16px;
+      border-bottom: 1px solid var(--gray-200);
+      font-size: 1.05rem;
+      color: var(--gray-700);
+    }
+    
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+    
+    tbody tr:hover {
+      background: var(--gray-50);
+    }
+    
+    .highlight-col {
+      background: linear-gradient(to bottom, #f0fdf4, #dcfce7);
+      font-weight: 700;
+      color: var(--green-800);
+      border-left: 2px solid var(--green-500);
+      border-right: 2px solid var(--green-500);
+    }
+    
+    .table-icon {
+      font-weight: 900;
+      font-size: 1.4rem;
+    }
+    
+    .yes { color: var(--green-600); }
+    .no { color: var(--red-500); opacity: 0.5; }
+    .partial { color: var(--yellow-500); font-size: 1rem; }
+    
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 60px auto;
+    }
+    
+    .stat {
+      text-align: center;
+      padding: 30px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 16px;
+      backdrop-filter: blur(5px);
+    }
+    
+    .stat-number {
+      font-size: 3.5rem;
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 10px;
+      color: var(--yellow-500);
+    }
+    
+    .stat-label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+    }
+    
+    /* Depoimentos */
+    .testimonial {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+      border-left: 6px solid var(--green-600);
+      height: 100%;
+    }
+    
+    .stars {
+      color: var(--yellow-500);
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+    }
+    
+    .testimonial-text {
+      font-size: 1.1rem;
+      color: var(--gray-700);
+      font-style: italic;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    
+    .testimonial-author {
+      font-weight: 800;
+      color: var(--blue-900);
+      font-size: 1rem;
+    }
+    
+    /* CTA */
+    .cta {
+      text-align: center;
+      padding: 120px 24px;
+    }
+    
+    .cta h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: white;
+    }
+    
+    .cta p {
+      font-size: 1.4rem;
+      opacity: 0.95;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: white;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--blue-950);
+      color: white;
+      padding: 80px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    footer a {
+      color: var(--blue-400);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .img-constrained { max-width: 90%; }
+      .hero h1 { font-size: 2.5rem; }
+      .section-title { font-size: 2.2rem; }
+      .header-logos { flex-direction: column; gap: 8px; }
+      .header-divider { display: none; }
+    }
+    
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .img-constrained { max-width: 100%; }
+      .feature-card, .content-block { padding: 30px 24px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-logos">
+        <img src="https://cdn.inglescurso.com.br/Veroclass/2026/01/logo-veroClass-light_1769605754.png" alt="VeroClass AI" class="header-logo">
+        <div class="header-divider"></div>
+        <img src="https://cdn.inglescurso.com.br/Ingles-Curso/2026/01/Logomarca-Ingl--s-Curso-Png_1769519771.png" alt="Inglês Curso Idiomas" class="header-logo">
+      </div>
+      
+      <nav class="header-nav">
+        <a href="#ambiente" class="btn btn-ghost">Ambiente</a>
+        <a href="#metodo" class="btn btn-ghost">Método & Cursos</a>
+        <a href="#emma" class="btn btn-ghost">Emma AI</a>
+        <a href="https://inglescurso.com.br" class="btn btn-primary">Matricule-se Agora →</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="https://cdn.inglescurso.com.br/Veroclass/2026/02/Logo-VeroClass-Transparent_1770815219.png" alt="VeroClass AI" class="hero-logo">
+      
+      <h1>A Revolução do Ensino Híbrido</h1>
+      
+      <p class="hero-subtitle">
+        A união da tradição da <strong>Inglês Curso Idiomas (desde 2002)</strong> com a tecnologia de ponta da <strong>VeroClass AI</strong>. 
+        Segurança institucional, metodologia comprovada em 3 passos e inteligência artificial trabalhando juntas pela sua fluência.
+      </p>
+      
+      <div class="hero-badges">
+        <div class="badge">🤖 IA Personalizada</div>
+        <div class="badge">📚 Método 3 Passos</div>
+        <div class="badge">🏫 Instituição com 20+ Anos</div>
+        <div class="badge">💳 Vitalício ou Mensal</div>
+      </div>
+      
+      <!-- Imagem Principal (Ambiente) - Regra 80% -->
+      <div style="margin-top: 50px;">
+        <img src="https://cdn.inglescurso.com.br/Veroclass/2026/02/ambiente_de_estudos_1770821466.JPG" alt="Painel do Aluno VeroClass Completo" class="img-constrained">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 1: Ambiente de Estudos (Simples e Organizado) -->
+  <section id="ambiente" class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Seu Ambiente de Estudos</h2>
+      <p class="section-subtitle">
+        Tudo organizado para você estudar com consistência. Um dashboard limpo, moderno e focado em manter você no caminho certo.
+      </p>
+      
+      <div class="grid-2">
+        <div class="content-block">
+          <h3>Navegação Intuitiva e Painel de Evolução</h3>
+          <p>
+            O aluno tem acesso a um dashboard onde visualiza exatamente onde parou, quais módulos completou e seu desempenho nas atividades. Nada de menus confusos.
+          </p>
+          <ul>
+            <li><span class="check">✓</span> <strong>Progresso Detalhado:</strong> Barras de progresso e estatísticas de uso em tempo real.</li>
+            <li><span class="check">✓</span> <strong>Múltiplas Mídias:</strong> Vídeo, áudio (podcasts gerados) e texto integrados na mesma interface.</li>
+            <li><span class="check">✓</span> <strong>Acesso Rápido:</strong> Retome sua aula exatamente de onde parou com um clique.</li>
+            <li><span class="check">✓</span> <strong>Material Blindado:</strong> Acesso a apostilas exclusivas diretamente no navegador.</li>
+          </ul>
+        </div>
+        
+        <!-- Imagem Dashboard - Regra 80% e Alinhamento -->
+        <div>
+          <img src="https://cdn.inglescurso.com.br/Veroclass/2026/02/area_do_aluno_1770821398.JPG" alt="Dashboard do Aluno" class="img-constrained">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 2: O Método & Portfólio (Escura para Contraste) -->
+  <section id="metodo" class="section-dark">
+    <div class="container">
+      <h2 class="section-title white">Método e Cursos Especializados</h2>
+      <p class="section-subtitle white">
+        Não vendemos apenas tecnologia. Vendemos um método educacional refinado por mais de duas décadas, com cursos que atendem necessidades reais de carreira.
+      </p>
+      
+      <!-- Grid simétrico -->
+      <div class="grid-2" style="align-items: stretch;">
+        <!-- Bloco O Método -->
+        <div class="content-block" style="background: white; color: var(--gray-800); border: none;">
+          <h3>O Método em 3 Passos</h3>
+          <p>
+            Todas as lições do curso <em>Inglês Express</em> seguem um "esqueleto" rígido para criar rotina cognitiva e reduzir a ansiedade do aprendizado.
+          </p>
+          <ul style="margin-top: 20px;">
+            <li>
+              <span class="check">1.</span>
+              <div>
+                <strong>Fundação:</strong> Vocabulário e verbos com áudios nativos. Você constrói a base antes de tentar falar.
+              </div>
+            </li>
+            <li>
+              <span class="check">2.</span>
+              <div>
+                <strong>Contexto:</strong> Gramática aplicada em diálogos reais com personagens recorrentes (Mr. Brown, Clark, Clarisse) que criam uma história contínua.
+              </div>
+            </li>
+            <li>
+              <span class="check">3.</span>
+              <div>
+                <strong>Produção:</strong> Exercícios de fala e escuta imediatos. Você é forçado a criar frases e usar o que aprendeu na mesma aula.
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Bloco Portfólio -->
+        <div class="content-block" style="background: white; color: var(--gray-800); border: none;">
+          <h3>Portfólio de Cursos</h3>
+          <p>Conteúdo especializado para objetivos específicos de carreira:</p>
+          
+          <div style="margin-bottom: 20px;">
+            <strong style="color: var(--blue-900); display: block; margin-bottom: 8px;">Corporativo & Profissional:</strong>
+            <ul>
+              <li><span class="check">✓</span> <strong>Business English Pro:</strong> Foco em escritório, viagens, reuniões e negociação.</li>
+              <li><span class="check">✓</span> <strong>Inglês para Exportação:</strong> Nicho específico (ex: Rochas Ornamentais) e Comércio Exterior.</li>
+              <li><span class="check">✓</span> <strong>Inglês Médico:</strong> Terminologia de saúde para profissionais.</li>
+            </ul>
+          </div>
+          
+          <div>
+            <strong style="color: var(--blue-900); display: block; margin-bottom: 8px;">Geral & Viagem:</strong>
+            <ul>
+              <li><span class="check">✓</span> <strong>Inglês Express:</strong> Do Zero à Conversação (Nível A0 ao B1).</li>
+              <li><span class="check">✓</span> <strong>Inglês para Viagem:</strong> Embarque na sua aventura com 20 lições práticas.</li>
+              <li><span class="check">✓</span> <strong>English Teen Connect:</strong> Metodologia adaptada para adolescentes.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 3: Material Didático Completo -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Material Didático Completo</h2>
+      <p class="section-subtitle">
+        Cada lição é um ecossistema. Você não recebe apenas um PDF; você recebe uma experiência multimídia integrada.
+      </p>
+      
+      <div class="grid-2">
+        <!-- Imagem Apostila - Regra 80% -->
+        <div>
+           <img src="https://cdn.inglescurso.com.br/Veroclass/2026/02/apostila_aulas_e_quizes_1770821441.JPG" alt="Apostila com Ícones de Áudio" class="img-constrained">
+        </div>
+        
+        <div class="content-block">
+          <h3>Estrutura "Blindada"</h3>
+          <p>
+            O material didático é consumido na plataforma com segurança e alta qualidade visual.
+          </p>
+          <ul>
+            <li><span class="check">✓</span> <strong>Apostila com Áudio:</strong> Ícones na apostila indicam exatamente quando clicar para ouvir a pronúncia nativa.</li>
+            <li><span class="check">✓</span> <strong>Videoaulas com Humanos:</strong> Professores reais explicam a matéria com calor humano e didática brasileira.</li>
+            <li><span class="check">✓</span> <strong>Resumo em Áudio:</strong> Podcasts gerados automaticamente para você revisar no trânsito ou na academia.</li>
+            <li><span class="check">✓</span> <strong>Quiz de Validação:</strong> 10 questões obrigatórias ao final de cada lição para garantir que você aprendeu.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 4: Emma AI (Azul Tecnológico - Sem Roxo) -->
+  <section id="emma" class="section-ai">
+    <div class="container">
+      <h2 class="section-title white">Emma: Sua Tutora Pessoal 24/7</h2>
+      <p class="section-subtitle white">
+        O modelo híbrido perfeito: Professores humanos dão a aula, a IA garante que você pratique todos os dias, a qualquer hora.
+      </p>
+      
+      <div class="grid-2">
+        <div class="content-block" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: white;">
+          <h3 style="color: white;">Inteligência Treinada no Curso</h3>
+          <p style="color: rgba(255,255,255,0.9);">
+            Emma não é um chatbot genérico. Ela é uma assistente treinada especificamente no conteúdo do Inglês Curso Idiomas.
+          </p>
+          <ul style="color: white;">
+            <li style="color: white;"><span class="check" style="color: #4ade80;">✓</span> <strong>Sem Julgamentos:</strong> Tenha vergonha zero. A Emma é o ambiente seguro para errar e destravar a fala.</li>
+            <li style="color: white;"><span class="check" style="color: #4ade80;">✓</span> <strong>Memória de Contexto:</strong> Ela sabe seu nome, seu nível e qual lição você está estudando.</li>
+            <li style="color: white;"><span class="check" style="color: #4ade80;">✓</span> <strong>Roleplay Infinito:</strong> Simule entrevistas, check-ins e reuniões quantas vezes quiser.</li>
+            <li style="color: white;"><span class="check" style="color: #4ade80;">✓</span> <strong>WhatsApp Integrado:</strong> Converse com ela por texto ou áudio direto no seu WhatsApp.</li>
+          </ul>
+        </div>
+        
+        <div>
+          <img src="https://cdn.inglescurso.com.br/Veroclass/2026/02/emma_suporte_1770821421.JPG" alt="Interface da Emma AI" class="img-constrained">
+        </div>
+      </div>
+      
+      <!-- Cards de Features IA - Recuperados -->
+      <div class="grid-4">
+        <div class="feature-card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+          <div class="feature-icon">🧠</div>
+          <h3 style="color: white;">Ela Te Conhece</h3>
+          <p style="color: rgba(255,255,255,0.8);">Personalização baseada no seu progresso.</p>
+        </div>
+        <div class="feature-card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+          <div class="feature-icon">🎤</div>
+          <h3 style="color: white;">Voz Natural</h3>
+          <p style="color: rgba(255,255,255,0.8);">Interaja por áudio com vozes ultra-realistas.</p>
+        </div>
+        <div class="feature-card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+          <div class="feature-icon">📖</div>
+          <h3 style="color: white;">Tira-Dúvidas</h3>
+          <p style="color: rgba(255,255,255,0.8);">Explicações gramaticais instantâneas sobre a aula.</p>
+        </div>
+        <div class="feature-card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+          <div class="feature-icon">📱</div>
+          <h3 style="color: white;">Multiplataforma</h3>
+          <p style="color: rgba(255,255,255,0.8);">Disponível no navegador e no celular.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 5: Prática com Feedback (Detalhado) -->
+  <section class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Prática com Feedback Instantâneo</h2>
+      <p class="section-subtitle">
+        Não basta assistir, tem que praticar. Usamos Whisper + GPT-4 para analisar sua fala e escrita em tempo real.
+      </p>
+      
+      <!-- Imagem Centralizada dos Recursos -->
+      <div style="margin-bottom: 50px;">
+        <img src="https://cdn.inglescurso.com.br/Multivozes/2026/02/Atividades_de_pronuncia_e_ditado_1770776003.JPG" alt="Tela de Pronúncia, Ditado e Quiz" class="img-constrained">
+      </div>
+      
+      <div class="grid-3">
+        <div class="feature-card">
+          <div class="feature-icon">🎙️</div>
+          <h3>Pronúncia em Tempo Real</h3>
+          <p>
+            O aluno grava sua voz e o sistema compara o áudio com o original. Você recebe feedback visual imediato sobre sua precisão. Pratique até acertar.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">✍️</div>
+          <h3>Ditados Inteligentes</h3>
+          <p>
+            Exercícios H5P onde você ouve áudios gerados por IA (com velocidade ajustável) e precisa escrever o que ouviu. Treina listening e writing simultaneamente.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>Quiz de Validação</h3>
+          <p>
+            Ao final de cada módulo, um teste de 10 perguntas confirma seu aprendizado. Errou? O sistema explica o porquê para você não levar dúvidas adiante.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 6: Vídeos e Player (Detalhado) -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Videoaulas que Ensinam de Verdade</h2>
+      <p class="section-subtitle">
+        Qualidade de cinema, didática de sala de aula.
+      </p>
+      
+      <div style="margin-bottom: 40px;">
+        <img src="https://cdn.inglescurso.com.br/Multivozes/2026/02/videos-protegidos-e-com-dados-do-usuario-na-tela_1770776340.JPG" alt="Player de Vídeo Profissional" class="img-constrained">
+      </div>
+      
+      <div class="grid-2">
+        <div class="content-block">
+          <h3>Tecnologia de Streaming</h3>
+          <p>
+            Vídeos hospedados em servidores de alta performance. O player se adapta à velocidade da sua internet para garantir que a aula nunca trave.
+          </p>
+          <ul>
+            <li><span class="check">✓</span> <strong>Velocidade Ajustável:</strong> Assista em 1.5x ou 2x para revisões.</li>
+            <li><span class="check">✓</span> <strong>Compatibilidade TV:</strong> Use Chromecast ou AirPlay para estudar na TV.</li>
+          </ul>
+        </div>
+        <div class="content-block">
+          <h3>Conteúdo Protegido e Integrado</h3>
+          <p>
+            Abaixo do vídeo, você tem acesso imediato aos materiais da aula e ao resumo em áudio. Tudo em uma única tela, sem distrações.
+          </p>
+          <ul>
+            <li><span class="check">✓</span> <strong>Dados na Tela:</strong> Proteção DRM com dados do usuário (segurança contra pirataria).</li>
+            <li><span class="check">✓</span> <strong>Navegação por Tópicos:</strong> Pule direto para a parte que interessa.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 7: Comparativo de Mercado (Tabela Restaurada) -->
+  <section class="section-alt">
+    <div class="container">
+      <h2 class="section-title">Por Que o VeroClass AI é Diferente?</h2>
+      <p class="section-subtitle">
+        Compare e veja por que nossa solução híbrida (Escola + IA) entrega mais resultados que aplicativos de jogos ou plataformas puramente humanas.
+      </p>
+      
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Recurso</th>
+              <th class="highlight-col" style="color: white; background: var(--blue-900); border: none;">VeroClass AI</th>
+              <th>Duolingo</th>
+              <th>Babbel</th>
+              <th>Cambly</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Tutora IA 24/7 (Emma)</strong></td>
+              <td class="highlight-col"><span class="table-icon yes">✓</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+            </tr>
+            <tr>
+              <td><strong>Professores Humanos (Videoaulas)</strong></td>
+              <td class="highlight-col"><span class="table-icon yes">✓</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+              <td style="text-align: center;"><span class="table-icon partial">Ao Vivo Apenas</span></td>
+            </tr>
+            <tr>
+              <td><strong>Apostila Estruturada (PDF+Áudio)</strong></td>
+              <td class="highlight-col"><span class="table-icon yes">✓</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+              <td style="text-align: center;"><span class="table-icon partial">Limitado</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+            </tr>
+            <tr>
+              <td><strong>Feedback de Pronúncia (IA)</strong></td>
+              <td class="highlight-col"><span class="table-icon yes">✓</span></td>
+              <td style="text-align: center;"><span class="table-icon partial">Básico</span></td>
+              <td style="text-align: center;"><span class="table-icon partial">Básico</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+            </tr>
+            <tr>
+              <td><strong>Cursos de Nicho (Médico/Exportação)</strong></td>
+              <td class="highlight-col"><span class="table-icon yes">✓</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+            </tr>
+            <tr>
+              <td><strong>Certificado Válido (Escola CNPJ)</strong></td>
+              <td class="highlight-col"><span class="table-icon yes">✓</span></td>
+              <td style="text-align: center;"><span class="table-icon no">×</span></td>
+              <td style="text-align: center;"><span class="table-icon yes">✓</span></td>
+              <td style="text-align: center;"><span class="table-icon partial">Cert. de Horas</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 8: A Empresa (Dossiê Completo) -->
+  <section class="section-dark">
+    <div class="container">
+      <h2 class="section-title white">A Instituição por Trás da Tecnologia</h2>
+      <p class="section-subtitle white">
+        A Inglês Curso Idiomas não é uma startup aventureira. Somos uma instituição de ensino sólida, com histórico e resultados comprovados.
+      </p>
+      
+      <div style="text-align: center; margin-bottom: 50px;">
+        <img src="https://cdn.inglescurso.com.br/Ingles-Curso/2026/01/Logomarca-Ingl--s-Curso-Png_1769519771.png" alt="Logo Inglês Curso Idiomas" style="max-width: 300px; height: auto;">
+      </div>
+      
+      <div class="grid-2">
+        <div class="content-block" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: white;">
+          <h3 style="color: white;">Histórico e Credibilidade</h3>
+          <p style="color: rgba(255,255,255,0.9);">
+            Fundada em <strong>2002</strong> (CNPJ 45.236.628/0001-29), a Inglês Curso Idiomas é pioneira no ensino online para brasileiros. 
+            São mais de duas décadas conectando alunos ao mercado global, com um histórico de promoções em multinacionais e aprovações acadêmicas.
+          </p>
+          <p style="color: rgba(255,255,255,0.9); margin-top: 10px;">
+            A instituição é liderada por profissionais como <strong>Samuel</strong> e conta com a coordenação pedagógica da <strong>Profª Milena</strong> (Pós-graduada em Tradução Simultânea, com vivência em Londres e 20+ anos de experiência).
+          </p>
+        </div>
+        
+        <div class="content-block" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: white;">
+          <h3 style="color: white;">O Modelo Híbrido Perfeito</h3>
+          <p style="color: rgba(255,255,255,0.9);">
+            Entendemos que a tecnologia sozinha não ensina, e o método tradicional é lento demais.
+          </p>
+          <ul style="color: white; margin-top: 15px;">
+            <li style="color: white;"><span class="check" style="color: #4ade80;">✓</span> <strong>A Mentora Humana:</strong> A Profª Milena traz a didática, o calor humano e a experiência de quem já treinou executivos.</li>
+            <li style="color: white;"><span class="check" style="color: #4ade80;">✓</span> <strong>A Assistente IA:</strong> A Emma garante a prática diária, corrige exercícios 24h e tira a vergonha de falar.</li>
+            <li style="color: white;"><span class="check" style="color: #4ade80;">✓</span> <strong>Transparência:</strong> Preços claros, opções de acesso vitalício ou recorrente e múltiplas formas de pagamento (Pix, Boleto, Cartão).</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-number">2002</div>
+          <div class="stat-label" style="color: rgba(255,255,255,0.9);">Ano de Fundação</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">24+</div>
+          <div class="stat-label" style="color: rgba(255,255,255,0.9);">Anos de Experiência</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">1000s</div>
+          <div class="stat-label" style="color: rgba(255,255,255,0.9);">Alunos Formados</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">10+</div>
+          <div class="stat-label" style="color: rgba(255,255,255,0.9);">Cursos de Nicho</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 9: Depoimentos (Restaurada) -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">O Que Nossos Alunos Dizem</h2>
+      <p class="section-subtitle">
+        Histórias reais de quem destravou o inglês com nosso método.
+      </p>
+      
+      <div class="grid-3">
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "A Emma é incrível! Toda vez que tenho dúvida, ela explica de um jeito que eu entendo. É como ter uma professora particular 24 horas! A timidez sumiu."
+          </p>
+          <p class="testimonial-author">— Maria Silva, São Paulo</p>
+        </div>
+        
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "Trabalho com exportação e o curso focado na minha área (Rochas) foi um diferencial absurdo. Vocabulário técnico que eu não achava em lugar nenhum."
+          </p>
+          <p class="testimonial-author">— Carlos Mendes, Espírito Santo</p>
+        </div>
+        
+        <div class="testimonial">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">
+            "A estrutura das aulas me deu segurança. Eu sei exatamente o que fazer: vídeo, apostila, quiz. Sem perder tempo procurando material."
+          </p>
+          <p class="testimonial-author">— Ana Costa, Belo Horizonte</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="section-green cta">
+    <div class="container">
+      <h2>O Próximo Passo é Seu</h2>
+      <p>
+        Você não está apenas comprando aulas de inglês; você está adquirindo um ecossistema de aprendizado desenhado para fazer você falar.
+        Una a segurança de uma escola tradicional com a inovação da IA.
+      </p>
+      
+      <a href="https://inglescurso.com.br" class="btn btn-primary" style="font-size: 1.3rem; padding: 20px 50px; background: white; color: var(--green-700);">
+        Garantir Minha Vaga Agora →
+      </a>
+      
+      <p style="margin-top: 30px; font-size: 1.1rem;">
+        🔒 Pagamento Seguro | Acesso Imediato | Certificado Incluso
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h3 style="font-size: 1.6rem; margin-bottom: 25px; font-weight: 900;">VeroClass AI + Inglês Curso Idiomas</h3>
+      
+      <p style="font-size: 1.1rem; opacity: 0.8; max-width: 800px; margin: 0 auto 30px;">
+        Plataforma moderna + Método comprovado + Suporte 24/7 = Aprenda inglês de verdade.
+      </p>
+      
+      <div style="margin: 30px 0;">
+        <p><strong>Dúvidas?</strong> <a href="mailto:samuel@inglescurso.com.br">samuel@inglescurso.com.br</a></p>
+        <p><strong>Conheça mais:</strong> <a href="https://inglescurso.com.br">inglescurso.com.br</a></p>
+      </div>
+      
+      <p style="margin-top: 50px; opacity: 0.6; font-size: 0.95rem;">
+        © 2026 Inglês Curso Idiomas LTDA (CNPJ 45.236.628/0001-29). Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
